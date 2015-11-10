@@ -10,12 +10,23 @@
 </head>
 <body>
 	<form id="myForm" action="http://formspree.io/angiestoyanova@gmail.com" method="POST">
-		name:<input type="text" name="username"/>
+		<input type="text" name="username" placeholder="Name"/>
 		<br>
-		password:<input type="password" name="password"/>
+		<input type="E-mail" name="email" required placeholder="E-mail"/>
 		<br>
-		email:<input type="email" name="email" required/>
-		<input type="submit"/>
+		<textarea name="user_message" rows="8" cols="40" placeholder="Type your message here"></textarea>
+		<br>
+ 		<input type="checkbox" name="optin" value="trusting" checked>I am having an absolutely wonderful day! :)
+		<br>
+		<select name="urgency">
+    	<optgroup label="Urgency scale">
+      	<option value="super">Super Urgent!</option>
+      	<option value="chill">I can wait!</option>
+    	</optgroup>
+  		</select>
+		<br>
+		<br>
+		<input type="submit">
 	</form>
 </body>
 </html>
